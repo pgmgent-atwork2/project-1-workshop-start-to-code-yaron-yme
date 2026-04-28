@@ -18,7 +18,7 @@ function startGame() {
   overlay.style.display = "none";
   spawnFood();
   clearInterval(loop);
-  loop = setInterval(tick, 120);
+  loop = setInterval(tick, 140);
 }
 
 function spawnFood() {
@@ -66,7 +66,7 @@ function draw() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   ctx.strokeStyle = "#000000";
-  ctx.lineWidth = 0.5;
+  ctx.lineWidth = 0.02;
   for (let x = 0; x < COLS; x++) {
     for (let y = 0; y < ROWS; y++) {
       ctx.strokeRect(x * GRID, y * GRID, GRID, GRID);

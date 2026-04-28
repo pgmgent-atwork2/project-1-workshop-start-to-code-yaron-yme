@@ -86,10 +86,12 @@ p {
     padding: 2rem;
     width: 80%;
     background-image: url("/img/background.png");
+    margin-bottom: 5rem;
 }
 
-.step1 img {
+img {
     width: 80%;
+    border-radius: 20px;
 }
 
 .step2 {

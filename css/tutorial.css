@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #b4d65e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+header {
+    margin-bottom: 5rem;
+}
+
+.home {
+    position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background: #4a9b6d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.home:hover {
+    background: #5ab37d;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+.links a{
+    padding: 10px 20px;
+  background: #4a9b6d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+  margin-right: 6rem;
+
+}
+
+.links a:hover {
+    background: #5ab37d;
+}
+
+h2 {
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.intro {
+    border-radius: 20px;
+    border: black 2px solid;
+    padding: 2rem;
+    width: 80%;
+    background-image: url("/img/background.png");
+    margin-bottom: 5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.step1 {
+    border-radius: 20px;
+    border: black 2px solid;
+    padding: 2rem;
+    width: 80%;
+    background-image: url("/img/background.png");
+    margin-bottom: 5rem;
+}
+
+img {
+    width: 80%;
+    border-radius: 20px;
+}
+
+.step2 {
+    border-radius: 20px;
+    border: black 2px solid;
+    padding: 2rem;
+    width: 80%;
+    background-image: url("/img/background.png");
+    margin-bottom: 5rem;
+}
+
+.step3 {
+    border-radius: 20px;
+    border: black 2px solid;
+    padding: 2rem;
+    width: 80%;
+    background-image: url("/img/background.png");
+    margin-bottom: 5rem;
+}
+
+.step4 {
+    border-radius: 20px;
+    border: black 2px solid;
+    padding: 2rem;
+    width: 80%;
+    background-image: url("/img/background.png");
+    margin-bottom: 5rem;
+}
+
+.final {
+    border-radius: 20px;
+    border: black solid 2px;
+}
+        

@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/tutorial.css">
+    <title>tutorial</title>
 </head>
 <body>
-    
+    <a href="home.html" class="home">home</a>
+    <header>
+        <h1>Mini-Snake - tutorial</h1>
+        <div class="links">
+            <a href="#instaleren">1. instaleren</a>
+            <a href="#html">2. HTML</a>
+            <a href="#css">3. CSS</a>
+            <a href="#js">4. javascript</a>
+        </div>
+    </header>
+
+    <section class="intro">
+        <h2>Wat gaan we maken ?</h2>
+        <p>In deze tutorial maken we de leuke mini-game Snake. Waar het de boedling is om als slang de appels op het veld op te eten zonder jezelf of de rand te raken.</p>
+    </section>
+
+    <section class="step1">
+        <h2 id="instaleren">stap 1: installatie</h2>
+        <p>Ga naar de officiële website van <span><a href="https://code.visualstudio.com/">Visual Studio Code</a></span>. Op de startpagina zie je meteen een knop om de versie te downloaden die geschikt is voor jouw besturingssysteem (Windows, macOS of Linux). Klik op de knop om het installatiebestand te downloaden. Zodra je dit hebt gedaan kunnen we aan de slag met programmeren!</p>
+        <h2>1.1 maak een nieuwe folder</h2>
+        <p>Maak een nieuwe folder met de naam snake.</p>
+        <img src="/img/snake_folder.png" alt="albeelding_snake_folder">
+        <h2>1.2 Open VS Code</h2>
+        <p>Open Visual Studio Code en open de nieuwe folder.</p>
+        <img src="/img/VS_folder.png" alt="afbeeldingen_folder_VS-code">
+        <h2>1.3 folderstructuur</h2>
+        <p>Maak de mappen css, html en js, en de bestanden style.css, index.js en index.html.
+            Gebruik de knoppen bovenaan in de verkenner. Zorg dat de bestandsnamen exact kloppen! De map- en bestandsstructuur ziet er zo uit:</p>
+        <img src="/img/folder_structuur.png" alt="afbeelding_folderstructuur">
+        <h2>1.4 Installatie Live Server</h2>
+        <p>Ga naar extensions en installeer de Live Server-extensie in Visual Studio Code.</p>
+        <img src="/img/live_server.png" alt="afbeeling_live_server">
+        <h2>1.5 Opstarten van Live Server</h2>
+        <p>Start de Live Server door onderaan op Go Live te klikken. Dit opent een nieuw browservenster met je project.</p>
+        <img src="/img/live_server_starten.png" alt="afbeelding_live_server_starten">
+    </section>
+
+    <section class="step2">
+        <h2 id="html">Stap 2: HTML</h2>
+        <p>HTML vormt de basis van je website. Het bepaalt de structuur en inhoud, zoals teksten, afbeeldingen en links. Pas daarna voeg je met CSS en JavaScript opmaak en gebruikersinteractie toe, zoals knoppen, formulieren en nog veel meer!</p>
+        <h2>2.1 Code index.html</h2>
+        <p>Kopieer onderstaande code in het index.html bestand. Dit is de basis stuctuur van een webpagina.</p>
+        <img src="/img/begin_html.png" alt="base_code_van_html">
+        <h2>2.2 Code plaatsen in index.html</h2>
+        <p>Voeg nu deze code toe aan je index.html, tussen de main en /main tags.</p>
+        <img src="/img/tussen_main.png" alt="Code_tussen_main">
+        <p>Nu zal je webpagina er zo uitzien, een titel met subtitel en twee knoppen.</p>
+        <br>
+        <img src="/img/page_zonder_style.png" alt="Game_zonder_styling">
+        <p>Goed gedaan! Je hebt nu de basis van de pagina opgebouwd met HTML</p>
+    </section>
+
+    <section class="step3">
+        <h2 id="css">stap 3: CSS</h2>
+        <p>CSS zorgt voor de vormgeving en stijl van je website. In deze taal spreken we elementen uit het index.html bestand aan en geven we ze bepaalde eigenschappen zoals groottes, kleuren, positionering en font-stijlen</p>
+        <h2>3.1 CSS toevoegen</h2>
+        <p>Plak deze code in je style.css bestand. Dit geeft een mooie layout aan het spel.</p>
+        <img src="/img/css.png" alt="css_code">
+        <p>Zo zal onze pagina er uitzien. Alle kleuren kun je zelf kiezen en aanpassen, hoe je zelf het spel eruit wil laten zien.</p>
+        <img src="/img/game_met_style.png" alt="De_game_met_style">
+    </section>
+
+    <section class="step4">
+        <h2 id="js">stap 4: JavaScript</h2>
+        <p>JavaScript is de code die de game gaat laten werken</p>
+        <h2>4.1 constanten uit html halen</h2>
+        <p>Je javascript linken aan de ids in de html</p>
+        <img src="/img/const_js.png" alt="constanten_uit_js">
+        <h2>4.2 functie start game</h2>
+        <p>Deze code gaat er voor zorgen dat alles start met werken en de game start</p>
+        <img src="/img/functie_startGame.png" alt="code_functie_startgame">
+        <h2>4.3 functie spawn food</h2>
+        <p>Deze Code gaat er voor zorgen dat de code op random plaatsen in de grit gaat verschijnen over een bepaald aantal ticks</p>
+        <img src="/img/functie_spawnfood.png" alt="code_functie_spawnfood">
+        <h2>4.4 functie tick</h2>
+        <p>Deze functie gaat er voor zorgen dat je de slang kan controlleren en dat de slang vooruit blijft gaan</p>
+        <img src="/img/functie_tick.png" alt="code_functie_tick">
+        <h2>4.5 functie draw</h2>
+        <p>Deze functie gaat de grid waar de slang in beweegt gemaakt word</p>
+        <img src="/img/functie_draw.png" alt="code_functie_draw">
+        <h2>4.6 functie gameOver</h2>
+        <p>Deze pagina gaat bepalen of de game over is</p>
+        <img src="/img/functie_gameOver.png" alt="code_functie_gameOver">
+    </section>
+
+    <h1>KLAAR ENJOY THE GAME</h1>
+    <img src="/img/game_af.png" alt="De_volledige_game" class="final">
 </body>
 </html>

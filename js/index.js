@@ -18,7 +18,7 @@ function startGame() {
   overlay.style.display = "none";
   spawnFood();
   clearInterval(loop);
-  loop = setInterval(tick, 120);
+  loop = setInterval(tick, 140);
 }
 
 function spawnFood() {
@@ -40,12 +40,10 @@ function tick() {
     y: snake[0].y + dir.y,
   };
 
-  // Muur botsing
   if (head.x < 0 || head.x >= COLS || head.y < 0 || head.y >= ROWS) {
     return gameOver();
   }
 
-  // Zelf botsing
   if (snake.some((s) => s.x === head.x && s.y === head.y)) {
     return gameOver();
   }
@@ -64,20 +62,17 @@ function tick() {
 }
 
 function draw() {
-  // Achtergrond
   ctx.fillStyle = "#b4d65e";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  // Grid
   ctx.strokeStyle = "#000000";
-  ctx.lineWidth = 0.5;
+  ctx.lineWidth = 0.02;
   for (let x = 0; x < COLS; x++) {
     for (let y = 0; y < ROWS; y++) {
       ctx.strokeRect(x * GRID, y * GRID, GRID, GRID);
     }
   }
 
-  // Snake
   snake.forEach((seg, i) => {
     const ratio = 1 - (i / snake.length) * 0.6;
     ctx.fillStyle = `rgba(0, 100, 0, ${ratio})`;
@@ -86,7 +81,6 @@ function draw() {
     ctx.fill();
   });
 
-  // Hoofd accent
   ctx.fillStyle = "rgb(0, 100, 0)";
   ctx.beginPath();
   ctx.roundRect(
@@ -98,7 +92,6 @@ function draw() {
   );
   ctx.fill();
 
-  // Eten
   ctx.fillStyle = "#ff0000";
   ctx.beginPath();
   ctx.arc(
@@ -130,7 +123,6 @@ document.addEventListener("keydown", (e) => {
   };
   const newDir = keys[e.key];
   if (!newDir) return;
-  // Mag niet 180 graden draaien
   if (newDir.x === -dir.x && newDir.y === -dir.y) return;
   nextDir = newDir;
   e.preventDefault();

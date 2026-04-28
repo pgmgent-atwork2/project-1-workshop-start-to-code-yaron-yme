@@ -52,7 +52,7 @@ canvas {
   border: 1px solid #0088ff;
   border-radius: 0;
   background-color: #b4d65e;
-  background-image: url("/img/background.png");
+  background-image: url("../img/background.png");
   background-size: contain;
   background-repeat: repeat;
 }
